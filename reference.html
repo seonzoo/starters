@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML/CSS/JS Reference file</title>
+    
+    <!-- HTML comments are written like this 
+         and can span over multiple lines -->
+    
+    <!-- SEE: https://purecss.io -->
+    <link rel="stylesheet" href="html-page-enhanced/css/pure-min.css">
+    
+    <!-- CSS Styles included in the <head> -->
+    <style>
+        body{
+            margin: 20px;
+        }
+    </style>
+    
+  </head>
+  <body>
+
+
+
+    <!-- Javascript <script> tag at the end of the <body> -->
+    <script>
+        console.log('Reference file loaded!');
+        document.write('Open up the console and view source of this file.');
+
+        /*
+          Javascript comment over multiple lines
+          (CSS uses this format for comments too)
+        */   
+
+        // this is a single line javascript comment
+
+        /**
+         *  TEST LOOP
+         */
+        let startNumber = 1;
+        let endNumber = 10;
+      
+        console.log('Logging numbers 1 to 9 ...');
+      
+        for ( i = startNumber; i < endNumber; i++ ) {
+            console.log(i);
+        }
+      
+      
+        /**
+         *  TEST ARRAY
+         */
+        let array = []; // make an empty array
+        
+        // push items into array
+        array.push( 'apples' );  // array[0]
+        array.push( 'oranges' ); // array[1]
+        array.push( 'bananas' ); // array[2]
+
+        array[3] = 'pears'; // set the 4th item 
+      
+        console.log('Logging array of fruit ...');
+        for ( let fruit of array ) {
+          console.log(fruit)
+        }
+
+        /**
+         *  TEST OBJECT
+         */
+        let people = [
+          {name: 'Jack', age: 50},
+          {name: 'Michael', age: 9}, 
+          {name: 'John', age: 40}, 
+          {name: 'Ann', age: 19}, 
+          {name: 'Elisabeth', age: 16}
+        ]
+
+        let numberOfPeople = people.length;
+        // use backticks ` and ${variable} to inject variables into strings
+        console.log(`Logging array of ${numberOfPeople} people objects ...`);
+        for ( let person of people ) {
+          // you can also join strings and variables with normal quotes and a plus sign +
+          console.log(person.name + ' is ' + person.age + ' years old' );
+        }
+
+
+    </script>
+      
+  </body>
+</html>

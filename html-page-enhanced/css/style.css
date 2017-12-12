@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 768px;
+}
